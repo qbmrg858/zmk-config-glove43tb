@@ -1,6 +1,31 @@
 # zmk-config-glove43tb
 
-- glove43tb用のZMKファームウェア
+- Glove43tb用のZMKファームウェア
+
+## Glove43tbとは
+
+- Xiao nRF52840（Xiao BLE）を採用した技適対応のワイヤレスキーボード
+- Bluetooth接続（最大5台）とType-Cケーブルによる有線接続が可能
+- `Cherry MXスイッチ`と`ロープロファイルスイッチ`（Choc V1, Choc V2_ガイドピンなし）に対応
+- 500mAhバッテリーを採用しながら薄型デザインを実現
+- 左側キーボードにロータリーエンコーダを搭載
+
+<img src="docs/images/example_01.jpg" alt="" width="50%"><img src="docs/images/example_02.jpg" alt="" width="50%">
+
+## スペック表
+
+| 項目 | 詳細 |
+| -- | -- |
+| ファームウェア | ZMK Firmware |
+| 接続方式 | 有線接続（Type-C）<br>Bluetooth（最大5台） |
+| 対応キースイッチ | ✅Choc V1<br>✅Choc V2（ガイドピンなし）<br>❌Choc V2（ガイドピンなし）<br>✅Lofree Ghost（Choc V2互換）<br>✅CherryMX |
+| バッテリー容量 | 500mAh |
+| バッテリー駆動時間 | おおよそ1ヶ月ほど |
+| ロータリーエンコーダ | ロープロファイル規格のエンコーダーを左側キーボードに配置 |
+
+## キーボードレイアウト
+
+![glove43tb.svg](keymap-drawer/glove43tb.svg)
 
 # Docs
 
@@ -76,7 +101,6 @@
 
   ![05.jpg](docs/images/05.jpg)
 
-- OLED付近のボタンをダブルクリックするとブートモードに入ります
 - ブートモードのときにPCとキーボードをUSB接続すると`XIAO-SENSE`というリムーバルディスクが見えるようになります
 
   ![06.jpg](docs/images/06.jpg)
@@ -100,7 +124,3 @@
 ## ZMK Studioでキーマップを変更する
 
 - TBA
-
-## Keyboard Layout
-
-![glove43tb.svg](keymap-drawer/glove43tb.svg)
