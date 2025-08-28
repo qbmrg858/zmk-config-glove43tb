@@ -6,7 +6,7 @@
 
 - Xiao nRF52840（Xiao BLE）を採用した技適対応のワイヤレスキーボード
 - Bluetooth接続（最大5台）とType-Cケーブルによる有線接続が可能
-- `Cherry MXスイッチ`と`ロープロファイルスイッチ`（Choc V1, Choc V2_ガイドピンなし）に対応
+- `Cherry MXスイッチ`と`ロープロファイルスイッチ`（Choc V1, Choc V2_ガイドピン無し）に対応
 - 500mAhバッテリーを採用しながら薄型デザインを実現
 - 左側キーボードにロータリーエンコーダを搭載
 
@@ -18,7 +18,7 @@
 | -- | -- |
 | ファームウェア | ZMK Firmware |
 | 接続方式 | 有線接続（Type-C）<br>Bluetooth（最大5台） |
-| 対応キースイッチ | ✅Choc V1<br>✅Choc V2（ガイドピンなし）<br>❌Choc V2（ガイドピンなし）<br>✅Lofree Ghost（Choc V2互換）<br>✅CherryMX |
+| 対応キースイッチ | ✅Choc V1<br>✅Choc V2（ガイドピン無し）<br>❌Choc V2（ガイドピン有り）<br>✅Lofree Ghost（Choc V2互換）<br>✅CherryMX |
 | バッテリー容量 | 500mAh |
 | バッテリー駆動時間 | おおよそ1ヶ月ほど |
 | ロータリーエンコーダ | ロープロファイル規格のエンコーダーを左側キーボードに配置 |
