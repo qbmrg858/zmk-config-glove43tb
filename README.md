@@ -1,8 +1,8 @@
-# zmk-config-glove43tb
+# zmk-config-glove43tb<!-- omit in toc -->
 
 - Glove43tb用のZMKファームウェア
 
-## Glove43tbとは
+## Glove43tbとは<!-- omit in toc -->
 
 - Xiao nRF52840（Xiao BLE）を採用した技適対応のワイヤレスキーボード
 - Bluetooth接続（最大5台）とType-Cケーブルによる有線接続が可能
@@ -10,9 +10,9 @@
 - 500mAhバッテリーを採用しながら薄型デザインを実現
 - 左側キーボードにロータリーエンコーダを搭載
 
-<img src="docs/images/example_01.jpg" alt="" width="50%"><img src="docs/images/example_02.jpg" alt="" width="50%">
+<img src="docs/images/finished_01.jpg" alt="" width="50%"><img src="docs/images/finished_02.jpg" alt="" width="50%">
 
-## スペック表
+## スペック表<!-- omit in toc -->
 
 | 項目 | 詳細 |
 | -- | -- |
@@ -23,11 +23,33 @@
 | バッテリー駆動時間 | おおよそ1ヶ月ほど |
 | ロータリーエンコーダ | ロープロファイル規格のエンコーダーを左側キーボードに配置 |
 
-## キーボードレイアウト
+## キーボードレイアウト<!-- omit in toc -->
 
 ![glove43tb.svg](keymap-drawer/glove43tb.svg)
 
-# Docs
+# Docs<!-- omit in toc -->
+
+- [ZMKファームウェアをビルドしてキーマップを変更する](#zmkファームウェアをビルドしてキーマップを変更する)
+  - [全体の流れ](#全体の流れ)
+  - [1. GitHubアカウントを作成する](#1-githubアカウントを作成する)
+  - [2. ZMKファームウェアのリポジトリをフォークする](#2-zmkファームウェアのリポジトリをフォークする)
+  - [3. GitHub Actionsの有効化](#3-github-actionsの有効化)
+  - [4. KeymapEditorとフォークしたリポジトリを連携する](#4-keymapeditorとフォークしたリポジトリを連携する)
+  - [5. KeymapEditorでキー配列変更してファームウェアをビルドする](#5-keymapeditorでキー配列変更してファームウェアをビルドする)
+  - [6. ファームウェアをキーボードに書き込む](#6-ファームウェアをキーボードに書き込む)
+    - [6-1. 右側キーボードにファームウェアを書き込む](#6-1-右側キーボードにファームウェアを書き込む)
+    - [6-2. 左側キーボードにファームウェアを書き込む](#6-2-左側キーボードにファームウェアを書き込む)
+  - [7. 完了](#7-完了)
+- [ZMK Studioでキーマップを変更する](#zmk-studioでキーマップを変更する)
+  - [1. `右側キーボード`とPCをType-Cケーブルで接続する](#1-右側キーボードとpcをtype-cケーブルで接続する)
+  - [2. `ZMK Studio`にアクセス](#2-zmk-studioにアクセス)
+  - [3. キーマップを変更するキーボードを選択](#3-キーマップを変更するキーボードを選択)
+  - [4. キーマップを変更する](#4-キーマップを変更する)
+  - [5. 完了](#5-完了)
+- [Tips](#tips)
+  - [`ZMKファームウェアをビルドしてキーマップを変更する`と`ZMK Studioでキーマップを変更する`を並行することは非推奨](#zmkファームウェアをビルドしてキーマップを変更するとzmk-studioでキーマップを変更するを並行することは非推奨)
+  - [左側キーボードでキー入力ができなくなった](#左側キーボードでキー入力ができなくなった)
+
 
 ## ZMKファームウェアをビルドしてキーマップを変更する
 
@@ -68,14 +90,14 @@
 
 - フォークしたリポジトリの「Actions」タブに移動し、「I understand my workflows, go ahead and enable them」をクリックし、github Actionsを有効化
 
-  ![01.jpg](docs/images/01.jpg)
+  ![build_01.jpg](docs/images/build_01.jpg)
 
 ### 4. KeymapEditorとフォークしたリポジトリを連携する
 
 - [KeymapEditor](https://nickcoutsos.github.io/keymap-editor/)にアクセス
 - `GitHub` を選択
 
-  ![02.jpg](docs/images/02.jpg)
+  ![build_02.jpg](docs/images/build_02.jpg)
 
 - 「Login with GitHub」からでログインし、「Authorize Keymap Editor」を選択
 - 指示に従い、フォークしたリポジトリにKeymapEditorがアクセスできるように進める
@@ -85,7 +107,7 @@
 - [KeymapEditor](https://nickcoutsos.github.io/keymap-editor/)上でキーマップが表示されたら、好きにキーマップを編集する
 - 画面左上の「Save」を押すと、編集したキーマップが適用されてGitHub Actionsが走り、自動的にビルドが開始します
 
-  ![03.jpg](docs/images/03.jpg)
+  ![build_03.jpg](docs/images/build_03.jpg)
 
 - 「Save」の隣に表示される「Latest」をクリックするとGitHubに移動し、ビルドが完了するとファームウェアがダウンロードできるようになります。（ビルドには2～4分かかる場合があります。）
 
@@ -93,17 +115,17 @@
 
 - ダウンロードしたzipファイルを解凍する
 
-  ![04.jpg](docs/images/04.jpg)
+  ![build_04.jpg](docs/images/build_04.jpg)
 
 #### 6-1. 右側キーボードにファームウェアを書き込む
 
 - `Reset Button`をダブルクリックしてブートモードに切り替える
 
-  ![05.jpg](docs/images/05.jpg)
+  ![build_05.jpg](docs/images/build_05.jpg)
 
 - ブートモードのときにPCとキーボードをUSB接続すると`XIAO-SENSE`というリムーバルディスクが見えるようになります
 
-  ![06.jpg](docs/images/06.jpg)
+  ![build_06.jpg](docs/images/build_06.jpg)
 
 - `XIAO-SENSE`に`glove43tb_R-seeeduino_xiao_ble-zmk.uf2`ファイルをドラッグアンドドロップしてください
 
@@ -123,4 +145,41 @@
 
 ## ZMK Studioでキーマップを変更する
 
-- TBA
+### 1. `右側キーボード`とPCをType-Cケーブルで接続する
+
+- 本キーボードは`右側キーボード`が親機になってますので、親機とPCをType-Cケーブルで有線接続すること
+
+### 2. `ZMK Studio`にアクセス
+
+- Chromeなどの任意のブラウザで[ZMK Studio](https://zmk.studio/)にアクセス
+  - https://zmk.studio/
+
+### 3. キーマップを変更するキーボードを選択
+
+- `USB`を選択
+  ![zmk_01.jpg](docs/images/zmk_01.jpg)
+- キーボードを選択するモーダルが表示されるので、`glove43tb (cu.usbmodem11301)`を選択してから`接続`をクリック
+  ![zmk_02.jpg](docs/images/zmk_02.jpg)
+
+### 4. キーマップを変更する
+
+- 変更後に右上の保存アイコンをクリックすると、変更内容をキーボードに書き込めます
+  ![zmk_03.jpg](docs/images/zmk_03.jpg)
+
+### 5. 完了
+
+- キーボードのスイッチを入れ直して完了
+- キー入力が正常に行えることを確認してください
+
+## Tips
+
+### `ZMKファームウェアをビルドしてキーマップを変更する`と`ZMK Studioでキーマップを変更する`を並行することは非推奨
+
+- ZMKファームウェアをビルドしてキーマップ変更したのに、ZMK Studioでのキーマップが優先されるケースがあるため
+- キーマップがうまく書き換えできなくなった場合は、[6. ファームウェアをキーボードに書き込む](#6-ファームウェアをキーボードに書き込む)で`settings_reset-seeeduino_xiao_ble-zmk.uf2`を書き込む手順を含めて実行すると解消可能です
+
+### 左側キーボードでキー入力ができなくなった
+
+- 左右キーボード間のペアリングが失敗している状態です
+- [6. ファームウェアをキーボードに書き込む]((#6-ファームウェアをキーボードに書き込む)で`settings_reset-seeeduino_xiao_ble-zmk.uf2`を書き込む手順を含めて実行すると解消可能です
+- `右側キーボード -> 左側キーボード`の順番で実行すると良いです
