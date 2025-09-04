@@ -48,6 +48,7 @@
   - [5. 完了](#5-完了)
 - [現在のレイヤーをLEDの色で判別できるようにする](#現在のレイヤーをledの色で判別できるようにする)
 - [バッテリー残量をLEDで確認する](#バッテリー残量をledで確認する)
+- [接続状況を確認する](#接続状況を確認する)
 - [`ZMKファームウェアをビルドしてキーマップを変更する`と`ZMK Studioでキーマップを変更する`を併用することは非推奨](#zmkファームウェアをビルドしてキーマップを変更するとzmk-studioでキーマップを変更するを併用することは非推奨)
 - [左側キーボードでキー入力ができなくなった](#左側キーボードでキー入力ができなくなった)
 - [ロータリーエンコーダを取り外してキースイッチを取り付け可能](#ロータリーエンコーダを取り外してキースイッチを取り付け可能)
@@ -200,7 +201,7 @@
 
 - `&ind_bat`を割り当てたキーを入力することで確認可能
 
-  > `SYMレイヤー（Layer: 3）`の左側キーボードに割当済み
+  > `Layer: 6`の左側キーボードに割当済み
 
 - LED表示色とバッテリー残量
 
@@ -211,13 +212,26 @@
   | Red | 10% |
 
 - バッテリー残量の表示設定を変更したいときは以下のファイルを修正すること
-  - [boards/shields/glove65tb/glove65tb_R.conf](boards/shields/glove65tb/glove65tb_R.conf)
+  - [boards/shields/glove43tb/glove43tb_R.conf](boards/shields/glove43tb/glove43tb_R.conf)
   - `Green`として表示するバッテリー残量を変更したいとき:
     - `CONFIG_RGBLED_WIDGET_BATTERY_LEVEL_HIGH`の値を書き換える
   - `Yellow`として表示するバッテリー残量を変更したいとき:
     - `CONFIG_RGBLED_WIDGET_BATTERY_LEVEL_LOW`の値を書き換える
   - `Red`として表示するバッテリー残量を変更したいとき:
     - `CONFIG_RGBLED_WIDGET_BATTERY_LEVEL_CRITICAL`の値を書き換える
+
+## 接続状況を確認する
+
+- `&ind_con`を割り当てたキーを入力することで確認可能
+
+  > `Layer: 6`の左側キーボードに割当済み
+
+- LED表示色とBluetooth接続状況
+
+  | LED Color | Bluetooth接続状況 |
+  | -- | -- |
+  | Blue | Bluetooth接続中 |
+  | Red | Bluetooth未接続 |
 
 ## `ZMKファームウェアをビルドしてキーマップを変更する`と`ZMK Studioでキーマップを変更する`を併用することは非推奨
 
