@@ -52,6 +52,7 @@
 - [`ZMKファームウェアをビルドしてキーマップを変更する`と`ZMK Studioでキーマップを変更する`を併用することは非推奨](#zmkファームウェアをビルドしてキーマップを変更するとzmk-studioでキーマップを変更するを併用することは非推奨)
 - [左側キーボードでキー入力ができなくなった](#左側キーボードでキー入力ができなくなった)
 - [ロータリーエンコーダを取り外してキースイッチを取り付け可能](#ロータリーエンコーダを取り外してキースイッチを取り付け可能)
+- [キーボードがチャタリングするときの対処方法](#キーボードがチャタリングするときの対処方法)
 
 ## ZMKファームウェアをビルドしてキーマップを変更する
 
@@ -188,14 +189,14 @@
 
     | Color | Value |
     | -- | -- |
-    | none（LED非表示） | 0 |
-    | Red | 1 |
-    | Green | 2 |
-    | Yellow | 3 |
-    | Blue | 4 |
-    | Magenta | 5 |
-    | Cyan | 6 |
-    | White |  7 |
+    | LED非表示 | 0 |
+    | 🔴 | 1 |
+    | 🟢 | 2 |
+    | 🟡 | 3 |
+    | 🔵 | 4 |
+    | 🟣 | 5 |
+    | 🔵（Cyan） | 6 |
+    | ⚪（White） |  7 |
 
 ## バッテリー残量をLEDで確認する
 
@@ -207,9 +208,9 @@
 
   | LED Color | バッテリー残量 |
   | -- | -- |
-  | Green | 60% |
-  | Yellow | 20% |
-  | Red | 10% |
+  | 🟢 | 60% |
+  | 🟡 | 20% |
+  | 🔴 | 10% |
 
 - バッテリー残量の表示設定を変更したいときは以下のファイルを修正すること
   - [boards/shields/glove43tb/glove43tb_R.conf](boards/shields/glove43tb/glove43tb_R.conf)
@@ -230,8 +231,8 @@
 
   | LED Color | Bluetooth接続状況 |
   | -- | -- |
-  | Blue | Bluetooth接続中 |
-  | Red | Bluetooth未接続 |
+  | 🔵 | Bluetooth接続中 |
+  | 🔴 | Bluetooth未接続 |
 
 ## `ZMKファームウェアをビルドしてキーマップを変更する`と`ZMK Studioでキーマップを変更する`を併用することは非推奨
 
@@ -248,3 +249,27 @@
 
 - ロータリーエンコーダをハンダ付けしている箇所には、キーソケット（CherryMX, Choc V1/V2）もハンダ付け済みです
 - はんだごてなどでロータリーエンコーダを取り外せばキースイッチを装着可能です
+
+## キーボードがチャタリングするときの対処方法
+
+- 電波干渉によりチャタリング（想定外に何度も入力されてしまう）が生じていると考えられます
+- 以下のファイルを修正することで、ソフトウェア側のデバウンスを調整することで対処可能です
+  - [boards/shields/glove43tb/glove43tb_R.conf](boards/shields/glove43tb/glove43tb_R.conf)
+  - [boards/shields/glove43tb/glove43tb_L.conf](boards/shields/glove43tb/glove43tb_L.conf)
+- 上述のファイルに以下の内容を追記する
+
+  ```text
+  CONFIG_ZMK_KSCAN_DEBOUNCE_PRESS_MS=10
+  CONFIG_ZMK_KSCAN_DEBOUNCE_RELEASE_MS=10
+  ```
+
+  - 値を大きくするほどチャタリングを防止できますが、キー入力時に遅延を感じるようになります
+
+- 公式ドキュメント: https://zmk.dev/docs/features/debouncing
+
+  > `CONFIG_ZMK_KSCAN_DEBOUNCE_PRESS_MS`: 未記載の場合は自動的に`5`として動作する
+  >
+  > `CONFIG_ZMK_KSCAN_DEBOUNCE_RELEASE_MS`: 未記載の場合は自動的に`5`として動作する
+  >
+
+- 参考例: https://x.com/search?q=CONFIG_ZMK_KSCAN_DEBOUNCE_RELEASE_MS
