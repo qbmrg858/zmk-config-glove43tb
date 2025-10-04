@@ -7,6 +7,7 @@
 - Xiao nRF52840（Xiao BLE）を採用した技適対応のワイヤレスキーボード
 - Bluetooth接続（最大5台）とType-Cケーブルによる有線接続が可能
 - `Cherry MXスイッチ`と`ロープロファイルスイッチ`（Choc V1, Choc V2_ガイドピン無し）に対応
+- キースイッチのホットスワップにも対応
 - 500mAhバッテリーを採用しながら薄型デザインを実現
 - 左側キーボードにロータリーエンコーダを搭載
 
@@ -213,6 +214,7 @@
   | 🔴 | 10% |
 
 - バッテリー残量の表示設定を変更したいときは以下のファイルを修正すること
+  - [boards/shields/glove43tb/glove43tb_L.conf](boards/shields/glove43tb/glove43tb_L.conf)
   - [boards/shields/glove43tb/glove43tb_R.conf](boards/shields/glove43tb/glove43tb_R.conf)
   - `Green`として表示するバッテリー残量を変更したいとき:
     - `CONFIG_RGBLED_WIDGET_BATTERY_LEVEL_HIGH`の値を書き換える
