@@ -3,7 +3,7 @@ layers:
   default:
   - Q
   - W
-  - E
+  - {t: E, h: LEFT CONTROL}
   - R
   - T
   - Y
@@ -11,12 +11,12 @@ layers:
   - {t: I, h: SCROLL}
   - O
   - P
-  - A
-  - S
-  - D
-  - F
-  - G
-  - Sft+Gui+S
+  - {t: A, h: LEFT SHIFT}
+  - {t: S, h: LEFT ALT}
+  - {t: D, h: LEFT GUI}
+  - {t: F, h: LEFT SHIFT}
+  - {t: G, h: LEFT CONTROL}
+  - {t: ▽, type: trans}
   - '-'
   - {t: H, h: LCTRL}
   - {t: J, h: RIGHT SHIFT}
@@ -28,7 +28,7 @@ layers:
   - C
   - V
   - B
-  - ':'
+  - Ctl+Sft+Gui+4
   - ;
   - N
   - M
@@ -38,10 +38,10 @@ layers:
   - Gui+C
   - LEFT ALT
   - LEFT CONTROL
-  - {t: LANG ZENKAKUHANKAKU, h: SCROLL}
+  - {t: GLOBE, h: SCROLL}
   - {t: SPACE, h: MOUSE_KIGO}
   - {t: TAB, h: UTILITY}
-  - F24
+  - GLOBE
   - {t: ENTER, h: ARROW_NUMBER}
   - Gui+V
   ARROW_NUMBER:
@@ -129,8 +129,8 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - DELETE
+  - BACKSPACE
   - '|'
   SCROLL:
   - {t: ▽, type: trans}
@@ -211,7 +211,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BT CLR
-  - {t: ▽, type: trans}
+  - '&bootloader'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
