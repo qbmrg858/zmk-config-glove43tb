@@ -149,7 +149,7 @@
 &trans  &trans    &mkp MCLK  &trans     &trans                           &kp PLUS   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOUBLE_QUOTES  &kp COLON
 &trans  &mkp MB4  &mkp RCLK  &mkp LCLK  &mkp MB5  &trans      &trans     &kp EQUAL  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SQT            &kp SEMICOLON
 &trans  &trans    &trans     &trans     &trans    &trans      &kp TILDE  &kp UNDER  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &gresc             &kp NON_US_BACKSLASH
-&trans  &trans    &trans     &trans     &trans    &trans      &trans     &trans                                                                     &trans
+&trans  &trans    &trans     &trans     &trans    &trans      &trans     &trans                                                                     &kp PIPE
             >;
         };
 
