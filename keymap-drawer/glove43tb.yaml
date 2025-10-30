@@ -18,11 +18,11 @@ layers:
   - G
   - Sft+Gui+S
   - '-'
-  - H
-  - J
-  - K
-  - L
-  - '-'
+  - {t: H, h: LCTRL}
+  - {t: J, h: RIGHT SHIFT}
+  - {t: K, h: RIGHT GUI}
+  - {t: L, h: RIGHT ALT}
+  - {t: '-', h: RIGHT SHIFT}
   - Z
   - X
   - C
@@ -82,9 +82,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
+  - Gui+X
+  - ESCAPE
+  - {t: Gui+Z, type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
