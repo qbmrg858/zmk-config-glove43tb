@@ -38,7 +38,7 @@ layers:
   - Gui+C
   - LEFT ALT
   - LEFT CONTROL
-  - {t: F24, h: SCROLL_DONTMOVE}
+  - {t: F24, h: RESERVE_1}
   - {t: SPACE, h: MOUSE_KIGO}
   - {t: TAB, h: UTILITY}
   - {t: F24, h: UTILITY}
@@ -177,7 +177,51 @@ layers:
   - {t: ▽, type: trans}
   - BT CLR ALL
   RESERVE_1:
-  - {t: ▽, type: trans}
+  - SPACE
+  - SPACE
+  - SPACE
+  - SPACE
+  - SPACE
+  - SPACE
+  - SPACE
+  - SPACE
+  - SPACE
+  - SPACE
+  - SPACE
+  - SPACE
+  - SPACE
+  - SPACE
+  - SPACE
+  - SPACE
+  - SPACE
+  - SPACE
+  - SPACE
+  - SPACE
+  - SPACE
+  - SPACE
+  - SPACE
+  - SPACE
+  - SPACE
+  - SPACE
+  - SPACE
+  - SPACE
+  - SPACE
+  - SPACE
+  - SPACE
+  - SPACE
+  - SPACE
+  - SPACE
+  - SPACE
+  - SPACE
+  - SPACE
+  - {t: SPACE, type: held}
+  - SPACE
+  - SPACE
+  - SPACE
+  - SPACE
+  - SPACE
+  SCROLL:
+  - Gui+H
   - Ctl+Gui+Alt+LEFT ARROW
   - Ctl+Alt+M
   - Alt+Ctl+Gui+RIGHT ARROW
@@ -187,10 +231,10 @@ layers:
   - F3
   - F4
   - F5
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+W
+  - Ctl+Alt+LEFT ARROW
+  - Ctl+Alt+R
+  - Ctl+Alt+RIGHT ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F13
@@ -200,9 +244,9 @@ layers:
   - F9
   - F10
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+Alt+U
+  - Ctl+Alt+C
+  - Ctl+Alt+I
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F24
@@ -217,53 +261,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - F12
-  SCROLL_DONTMOVE:
-  - {t: ▽, type: trans}
-  - Alt+Ctl+Gui+LEFT ARROW
-  - Alt+Ctl+M
-  - Gui+Ctl+Alt+RIGHT ARROW
-  - {t: ▽, type: trans}
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - F12
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+DOWN ARROW
   - Ctl+UP ARROW
-  - {t: ▽, type: trans}
+  - F12
   '7':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
