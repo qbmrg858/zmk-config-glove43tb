@@ -126,10 +126,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W         &kp E             &kp R                        &kp T                                                          &kp Y        &kp U              &lt 5 I          &kp O            &kp P
-&kp A      &kp S         &kp D             &kp F                        &kp G        &kp LS(LG(S))                      &kp MINUS      &mt LCTRL H  &mt RIGHT_SHIFT J  &mt RIGHT_GUI K  &mt RIGHT_ALT L  &mt RIGHT_SHIFT MINUS
-&kp Z      &kp X         &kp C             &kp V                        &kp B        &kp COLON                          &kp SEMICOLON  &kp N        &kp M              &kp COMMA        &kp DOT          &kp SLASH
-&kp LG(C)  &kp LEFT_ALT  &kp LEFT_CONTROL  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 1 INT_MUHENKAN      &kp F24        &lt 1 ENTER                                                       &kp LG(V)
+&kp Q      &kp W         &kp E             &kp R                      &kp T                                          &kp Y        &kp U              &lt 3 I          &kp O            &kp P
+&kp A      &kp S         &kp D             &kp F                      &kp G        &kp LS(LG(S))      &kp MINUS      &mt LCTRL H  &mt RIGHT_SHIFT J  &mt RIGHT_GUI K  &mt RIGHT_ALT L  &mt RIGHT_SHIFT MINUS
+&kp Z      &kp X         &kp C             &kp V                      &kp B        &kp COLON          &kp SEMICOLON  &kp N        &kp M              &kp COMMA        &kp DOT          &kp SLASH
+&kp LG(C)  &kp LEFT_ALT  &kp LEFT_CONTROL  &lt 3 LANG_ZENKAKUHANKAKU  &lt 2 SPACE  &lt 4 TAB          &kp F24        &lt 1 ENTER                                                       &kp LG(V)
             >;
 
             sensor-bindings = <&mouse_wheel_scroll SCRL_DOWN SCRL_UP>;
@@ -146,10 +146,28 @@
 
         MOUSE_KIGO {
             bindings = <
-&trans  &trans    &mkp MCLK  &trans     &trans                        &kp PLUS   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOUBLE_QUOTES  &kp COLON
-&trans  &mkp MB4  &mkp RCLK  &mkp LCLK  &mkp MB5  &trans      &trans  &kp EQUAL  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SQT            &kp SEMICOLON
-&trans  &trans    &trans     &trans     &trans    &trans      &trans  &kp UNDER  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE          &kp NON_US_BACKSLASH
-&trans  &trans    &trans     &trans     &trans    &trans      &trans  &trans                                                                     &trans
+&trans  &trans    &mkp MCLK  &trans     &trans                           &kp PLUS   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOUBLE_QUOTES  &kp COLON
+&trans  &mkp MB4  &mkp RCLK  &mkp LCLK  &mkp MB5  &trans      &trans     &kp EQUAL  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SQT            &kp SEMICOLON
+&trans  &trans    &trans     &trans     &trans    &trans      &kp TILDE  &kp UNDER  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &gresc             &kp NON_US_BACKSLASH
+&trans  &trans    &trans     &trans     &trans    &trans      &trans     &trans                                                                     &trans
+            >;
+        };
+
+        SCROLL {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+            >;
+        };
+
+        UTILITY {
+            bindings = <
+&trans  &trans        &trans        &trans        &trans                               &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans        &trans        &trans        &trans    &trans        &trans       &trans        &trans        &trans        &trans        &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &ind_con  &ind_bat      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
+&trans  &trans        &trans        &trans        &trans    &trans        &trans       &trans                                                  &bt BT_CLR_ALL
             >;
         };
 
@@ -170,24 +188,6 @@
 &kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
 &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
 &trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                                     &kp PIPE
-            >;
-        };
-
-        SCROLL {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
-            >;
-        };
-
-        layer_6 {
-            bindings = <
-&trans  &trans        &trans        &trans        &trans                               &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans        &trans        &trans        &trans    &trans        &trans       &trans        &trans        &trans        &trans        &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &ind_con  &ind_bat      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans        &trans        &trans        &trans    &trans        &trans       &trans                                                  &bt BT_CLR_ALL
             >;
         };
     };
