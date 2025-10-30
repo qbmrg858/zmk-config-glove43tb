@@ -126,10 +126,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W           &mt LEFT_CONTROL E  &kp R             &kp T                                                            &kp Y        &kp U              &mt RIGHT_CONTROL I  &kp O            &kp P
+&kp Q             &kp W           &mt LEFT_CONTROL E  &kp R             &kp T                                                            &kp Y        &kp U              &mt RIGHT_CONTROL I  &kp O            &lt 5 P
 &mt LEFT_SHIFT A  &mt LEFT_ALT S  &mt LEFT_GUI D      &mt LEFT_SHIFT F  &mt LEFT_CONTROL G  &trans                        &kp EQUAL      &mt LCTRL H  &mt RIGHT_SHIFT J  &mt RIGHT_GUI K      &mt RIGHT_ALT L  &mt RIGHT_SHIFT MINUS
 &kp Z             &kp X           &kp C               &kp V             &kp B               &kp LC(LS(LG(NUMBER_4)))      &kp SEMICOLON  &kp N        &kp M              &kp COMMA            &kp DOT          &kp SLASH
-&kp LG(C)         &kp LEFT_ALT    &kp LEFT_CONTROL    &lt 4 F24         &lt 2 SPACE         &lt 3 TAB                     &lt 3 F24      &lt 1 ENTER                                                           &kp LG(V)
+&kp LG(C)         &kp LEFT_ALT    &kp LEFT_CONTROL    &lt 5 F24         &lt 2 SPACE         &lt 3 TAB                     &lt 3 F24      &lt 1 ENTER                                                           &kp LG(V)
             >;
 
             sensor-bindings = <&mouse_wheel_scroll SCRL_DOWN SCRL_UP>;
