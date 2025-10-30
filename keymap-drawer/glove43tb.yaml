@@ -8,7 +8,7 @@ layers:
   - T
   - Y
   - U
-  - {t: I, h: default}
+  - {t: I, h: RIGHT CONTROL}
   - O
   - P
   - {t: A, h: LEFT SHIFT}
@@ -262,7 +262,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+UP ARROW
   - {t: ▽, type: trans}
   '7':
   - {t: ▽, type: trans}
