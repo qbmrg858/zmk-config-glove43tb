@@ -101,8 +101,8 @@ layers:
   - ':'
   - {t: ▽, type: trans}
   - '&mkp MB4'
-  - '&mkp RCLK'
-  - '&mkp LCLK'
+  - '&mkp MB2'
+  - '&mkp MB1'
   - '&mkp MB5'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -131,7 +131,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '|'
   SCROLL:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
