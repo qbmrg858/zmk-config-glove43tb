@@ -38,10 +38,10 @@ layers:
   - Gui+C
   - LEFT ALT
   - LEFT CONTROL
-  - {t: Ctl+SPACE, h: SCROLL_DONTMOVE}
+  - {t: LANGUAGE 1, h: SCROLL_DONTMOVE}
   - {t: SPACE, h: MOUSE_KIGO}
   - {t: TAB, h: UTILITY}
-  - GLOBE
+  - {t: LANGUAGE 2, h: UTILITY}
   - {t: ENTER, h: ARROW_NUMBER}
   - Gui+V
   ARROW_NUMBER:
@@ -222,9 +222,9 @@ layers:
   - F12
   SCROLL_DONTMOVE:
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Alt+Ctl+Gui+LEFT ARROW
+  - Alt+Ctl+M
+  - Gui+Ctl+Alt+RIGHT ARROW
   - {t: ▽, type: trans}
   - F1
   - F2
