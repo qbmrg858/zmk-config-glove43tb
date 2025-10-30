@@ -94,13 +94,6 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
-
-        password: password {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp H &kp O &kp S &kp Y &kp A &kp LS(N) &kp LS(O) &kp N0 &kp N9 &kp N1 &kp N3>;
-            label = "PASSWORD";
-        };
     };
 
     behaviors {
@@ -169,29 +162,29 @@
             >;
         };
 
-        reserve {
+        AUTO_MOUSE {
             bindings = <
-&kp LG(H)  &kp LC(LG(LA(LEFT_ARROW)))  &kp LC(LA(M))  &kp LA(LC(LG(RIGHT_ARROW)))  &trans                                  &kp F1            &kp F2  &kp F3  &kp F4  &kp F5
-&kp LG(W)  &kp LC(LA(LEFT_ARROW))      &kp LC(LA(R))  &kp LC(LA(RIGHT_ARROW))      &trans  &trans      &kp F13             &kp F6            &kp F7  &kp F8  &kp F9  &kp F10
-&trans     &kp LC(LA(U))               &kp LC(LA(C))  &kp LC(LA(I))                &trans  &trans      &kp F24             &trans            &trans  &trans  &trans  &kp F11
-&trans     &trans                      &trans         &trans                       &trans  &trans      &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)                          &kp F12
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
-
-            sensor-bindings = <&sensor_rotate_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         SCROLL {
             bindings = <
 &kp LG(H)  &kp LC(LG(LA(LEFT_ARROW)))  &kp LC(LA(M))  &kp LA(LC(LG(RIGHT_ARROW)))  &trans                                  &kp F1            &kp F2  &kp F3  &kp F4  &kp F5
 &kp LG(W)  &kp LC(LA(LEFT_ARROW))      &kp LC(LA(R))  &kp LC(LA(RIGHT_ARROW))      &trans  &trans      &kp F13             &kp F6            &kp F7  &kp F8  &kp F9  &kp F10
-&trans     &kp LC(LA(U))               &kp LC(LA(C))  &kp LC(LA(I))                &trans  &trans      &password           &trans            &trans  &trans  &trans  &kp F11
+&trans     &kp LC(LA(U))               &kp LC(LA(C))  &kp LC(LA(I))                &trans  &trans      &trans              &trans            &trans  &trans  &trans  &kp F11
 &trans     &trans                      &trans         &trans                       &trans  &trans      &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)                          &kp F12
             >;
 
-            sensor-bindings = <&sensor_rotate_kp C_VOLUME_DOWN C_VOLUME_UP>;
+            sensor-bindings =
+                <&sensor_rotate_kp C_VOLUME_DOWN C_VOLUME_UP>,
+                <&inc_dec_kp 0 0>;
         };
 
-        layer_7 {
+        RESERVE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
