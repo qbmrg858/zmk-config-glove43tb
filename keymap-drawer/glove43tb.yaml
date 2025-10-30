@@ -17,7 +17,7 @@ layers:
   - {t: F, h: LEFT SHIFT}
   - {t: G, h: LEFT CONTROL}
   - {t: ▽, type: trans}
-  - '-'
+  - '='
   - {t: H, h: LCTRL}
   - {t: J, h: RIGHT SHIFT}
   - {t: K, h: RIGHT GUI}
@@ -38,7 +38,7 @@ layers:
   - Gui+C
   - LEFT ALT
   - LEFT CONTROL
-  - {t: Ctl+SPACE, h: SCROLL}
+  - {t: Ctl+SPACE, h: SCROLL_DONTMOVE}
   - {t: SPACE, h: MOUSE_KIGO}
   - {t: TAB, h: UTILITY}
   - GLOBE
@@ -176,11 +176,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BT CLR ALL
-  FUNCTION:
+  RESERVE_1:
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+Gui+Alt+LEFT ARROW
+  - Ctl+Alt+M
+  - Alt+Ctl+Gui+RIGHT ARROW
   - {t: ▽, type: trans}
   - F1
   - F2
@@ -220,7 +220,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F12
-  SCROLL:
+  SCROLL_DONTMOVE:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -264,41 +264,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  NUM:
-  - '-'
-  - KP 7
-  - KP 8
-  - KP 9
-  - +
-  - ^
-  - '&'
-  - '~'
-  - (
-  - )
-  - /
-  - KP 4
-  - KP 5
-  - KP 6
-  - '*'
-  - Ctl+Alt+KP 0
-  - _
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - {t: KP 0, h: LEFT SHIFT}
-  - KP 1
-  - KP 2
-  - KP 3
-  - .
-  - '='
-  - {t: ▽, type: trans}
-  - '['
-  - ']'
-  - '{'
-  - '}'
-  - \
+  '7':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -307,7 +273,41 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '|'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
 - p: [11, 12]
   k: TAB
