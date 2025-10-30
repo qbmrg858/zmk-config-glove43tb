@@ -10,7 +10,7 @@ layers:
   - U
   - {t: I, h: RIGHT CONTROL}
   - O
-  - P
+  - {t: P, h: SCROLL}
   - {t: A, h: LEFT SHIFT}
   - {t: S, h: LEFT ALT}
   - {t: D, h: LEFT GUI}
@@ -38,7 +38,7 @@ layers:
   - Gui+C
   - LEFT ALT
   - LEFT CONTROL
-  - {t: F24, h: RESERVE_1}
+  - {t: F24, h: SCROLL}
   - {t: SPACE, h: MOUSE_KIGO}
   - {t: TAB, h: UTILITY}
   - {t: F24, h: UTILITY}
@@ -176,50 +176,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BT CLR ALL
-  RESERVE_1:
-  - SPACE
-  - SPACE
-  - SPACE
-  - SPACE
-  - SPACE
-  - SPACE
-  - SPACE
-  - SPACE
-  - SPACE
-  - SPACE
-  - SPACE
-  - SPACE
-  - SPACE
-  - SPACE
-  - SPACE
-  - SPACE
-  - SPACE
-  - SPACE
-  - SPACE
-  - SPACE
-  - SPACE
-  - SPACE
-  - SPACE
-  - SPACE
-  - SPACE
-  - SPACE
-  - SPACE
-  - SPACE
-  - SPACE
-  - SPACE
-  - SPACE
-  - SPACE
-  - SPACE
-  - SPACE
-  - SPACE
-  - SPACE
-  - SPACE
-  - {t: SPACE, type: held}
-  - SPACE
-  - SPACE
-  - SPACE
-  - SPACE
-  - SPACE
+  RESERVE_1: [SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE,
+    SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE]
   SCROLL:
   - Gui+H
   - Ctl+Gui+Alt+LEFT ARROW
@@ -230,7 +188,7 @@ layers:
   - F2
   - F3
   - F4
-  - F5
+  - {t: F5, type: held}
   - Gui+W
   - Ctl+Alt+LEFT ARROW
   - Ctl+Alt+R
