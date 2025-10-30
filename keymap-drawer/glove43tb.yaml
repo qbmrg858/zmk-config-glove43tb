@@ -117,11 +117,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '~'
+  - Sft+F23
   - _
   - (
   - )
-  - {t: ESC, s: '`'}
+  - F23
   - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
