@@ -126,10 +126,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W         &kp E             &kp R                      &kp T                                          &kp Y        &kp U              &lt 3 I          &kp O            &kp P
-&kp A      &kp S         &kp D             &kp F                      &kp G        &kp LS(LG(S))      &kp MINUS      &mt LCTRL H  &mt RIGHT_SHIFT J  &mt RIGHT_GUI K  &mt RIGHT_ALT L  &mt RIGHT_SHIFT MINUS
-&kp Z      &kp X         &kp C             &kp V                      &kp B        &kp COLON          &kp SEMICOLON  &kp N        &kp M              &kp COMMA        &kp DOT          &kp SLASH
-&kp LG(C)  &kp LEFT_ALT  &kp LEFT_CONTROL  &lt 3 LANG_ZENKAKUHANKAKU  &lt 2 SPACE  &lt 4 TAB          &kp F24        &lt 1 ENTER                                                       &kp LG(V)
+&kp Q             &kp W           &mt LEFT_CONTROL E  &kp R             &kp T                                                            &kp Y        &kp U              &lt 3 I          &kp O            &kp P
+&mt LEFT_SHIFT A  &mt LEFT_ALT S  &mt LEFT_GUI D      &mt LEFT_SHIFT F  &mt LEFT_CONTROL G  &trans                        &kp MINUS      &mt LCTRL H  &mt RIGHT_SHIFT J  &mt RIGHT_GUI K  &mt RIGHT_ALT L  &mt RIGHT_SHIFT MINUS
+&kp Z             &kp X           &kp C               &kp V             &kp B               &kp LC(LS(LG(NUMBER_4)))      &kp SEMICOLON  &kp N        &kp M              &kp COMMA        &kp DOT          &kp SLASH
+&kp LG(C)         &kp LEFT_ALT    &kp LEFT_CONTROL    &lt 3 GLOBE       &lt 2 SPACE         &lt 4 TAB                     &kp GLOBE      &lt 1 ENTER                                                       &kp LG(V)
             >;
 
             sensor-bindings = <&mouse_wheel_scroll SCRL_DOWN SCRL_UP>;
@@ -146,10 +146,10 @@
 
         MOUSE_KIGO {
             bindings = <
-&trans  &trans    &mkp MCLK  &trans    &trans                           &kp PLUS   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOUBLE_QUOTES  &kp COLON
-&trans  &mkp MB4  &mkp MB2   &mkp MB1  &mkp MB5  &trans      &trans     &kp EQUAL  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SQT            &kp SEMICOLON
-&trans  &trans    &trans     &trans    &trans    &trans      &kp TILDE  &kp UNDER  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &gresc             &kp NON_US_BACKSLASH
-&trans  &trans    &trans     &trans    &trans    &trans      &trans     &trans                                                                     &kp PIPE
+&trans  &trans    &mkp MCLK  &trans    &trans                            &kp PLUS       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOUBLE_QUOTES  &kp COLON
+&trans  &mkp MB4  &mkp MB2   &mkp MB1  &mkp MB5  &trans      &trans      &kp EQUAL      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SQT            &kp SEMICOLON
+&trans  &trans    &trans     &trans    &trans    &trans      &kp TILDE   &kp UNDER      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &gresc             &kp NON_US_BACKSLASH
+&trans  &trans    &trans     &trans    &trans    &trans      &kp DELETE  &kp BACKSPACE                                                                  &kp PIPE
             >;
         };
 
@@ -164,10 +164,10 @@
 
         UTILITY {
             bindings = <
-&trans  &trans        &trans        &trans        &trans                               &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans        &trans        &trans        &trans    &trans        &trans       &trans        &trans        &trans        &trans        &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &ind_con  &ind_bat      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans        &trans        &trans        &trans    &trans        &trans       &trans                                                  &bt BT_CLR_ALL
+&trans       &trans        &trans        &trans        &trans                               &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans       &trans        &trans        &trans        &trans    &trans        &trans       &trans        &trans        &trans        &trans        &trans
+&trans       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &ind_con  &ind_bat      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
+&bootloader  &trans        &trans        &trans        &trans    &trans        &trans       &trans                                                  &bt BT_CLR_ALL
             >;
         };
 
