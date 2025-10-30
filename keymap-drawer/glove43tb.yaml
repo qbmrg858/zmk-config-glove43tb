@@ -38,10 +38,10 @@ layers:
   - Gui+C
   - LEFT ALT
   - LEFT CONTROL
-  - {t: LANGUAGE 1, h: SCROLL_DONTMOVE}
+  - {t: F24, h: SCROLL_DONTMOVE}
   - {t: SPACE, h: MOUSE_KIGO}
   - {t: TAB, h: UTILITY}
-  - {t: LANGUAGE 2, h: UTILITY}
+  - {t: F24, h: UTILITY}
   - {t: ENTER, h: ARROW_NUMBER}
   - Gui+V
   ARROW_NUMBER:
