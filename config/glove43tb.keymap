@@ -173,10 +173,10 @@
 
         SCROLL {
             bindings = <
-&kp LG(H)  &kp LC(LG(LA(LEFT_ARROW)))  &kp LC(LA(M))  &kp LA(LC(LG(RIGHT_ARROW)))  &trans                                  &kp F1            &kp F2  &kp F3  &kp F4  &kp F5
-&kp LG(W)  &kp LC(LA(LEFT_ARROW))      &kp LC(LA(R))  &kp LC(LA(RIGHT_ARROW))      &trans  &trans      &kp F13             &kp F6            &kp F7  &kp F8  &kp F9  &kp F10
-&trans     &kp LC(LA(U))               &kp LC(LA(C))  &kp LC(LA(I))                &trans  &trans      &trans              &trans            &trans  &trans  &trans  &kp F11
-&trans     &trans                      &trans         &trans                       &trans  &trans      &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)                          &kp F12
+&kp LG(H)  &kp LC(LG(LA(LEFT_ARROW)))  &kp LC(LA(M))  &kp LA(LC(LG(RIGHT_ARROW)))  &trans                                  &kp F1            &kp F2  &kp F3  &kp F4   &kp F5
+&kp LG(W)  &kp LC(LA(LEFT_ARROW))      &kp LC(LA(R))  &kp LC(LA(RIGHT_ARROW))      &trans  &trans      &kp F6              &kp F7            &kp F8  &kp F9  &kp F10  &kp F11
+&trans     &kp LC(LA(U))               &kp LC(LA(C))  &kp LC(LA(I))                &trans  &trans      &trans              &trans            &trans  &trans  &trans   &kp F12
+&trans     &trans                      &trans         &trans                       &trans  &trans      &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)                           &trans
             >;
 
             sensor-bindings =
