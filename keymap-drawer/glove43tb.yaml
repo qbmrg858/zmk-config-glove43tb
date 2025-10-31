@@ -17,7 +17,7 @@ layers:
   - {t: F, h: LEFT SHIFT}
   - {t: G, h: LEFT CONTROL}
   - {t: ▽, type: trans}
-  - '='
+  - <
   - {t: H, h: LCTRL}
   - {t: J, h: RIGHT SHIFT}
   - {t: K, h: RIGHT GUI}
@@ -29,7 +29,7 @@ layers:
   - V
   - B
   - Ctl+Sft+Gui+4
-  - ;
+  - '>'
   - N
   - M
   - ','
@@ -41,7 +41,7 @@ layers:
   - {t: F24, h: SCROLL}
   - {t: SPACE, h: MOUSE_KIGO}
   - {t: TAB, h: UTILITY}
-  - {t: F24, h: UTILITY}
+  - {t: F24, h: KIGO}
   - {t: ENTER, h: ARROW_NUMBER}
   - Gui+V
   ARROW_NUMBER:
@@ -105,7 +105,7 @@ layers:
   - '&mkp MB1'
   - '&mkp MB5'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Sft+F23
   - '='
   - '['
   - ']'
@@ -117,12 +117,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Sft+F23
+  - F23
   - _
   - (
   - )
-  - F23
   - \
+  - '|'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -131,7 +131,7 @@ layers:
   - {t: ▽, type: trans}
   - DELETE
   - BACKSPACE
-  - '|'
+  - {t: ▽, type: trans}
   UTILITY:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -156,9 +156,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '1'
-  - '2'
-  - '3'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '&ind_con'
   - '&ind_bat'
   - '&bootloader'
@@ -264,7 +264,33 @@ layers:
   - Ctl+DOWN ARROW
   - Ctl+UP ARROW
   - {t: ▽, type: trans}
-  RESERVE:
+  KIGO:
+  - {t: ▽, type: trans}
+  - '&'
+  - '*'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - $
+  - '%'
+  - ^
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '!'
+  - '@'
+  - '#'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -279,33 +305,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
