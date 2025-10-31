@@ -99,7 +99,7 @@ layers:
   - '}'
   - '"'
   - ':'
-  - {t: ▽, type: trans}
+  - Gui+A
   - '&mkp MB4'
   - '&mkp MB2'
   - '&mkp MB1'
