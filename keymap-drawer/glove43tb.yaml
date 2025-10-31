@@ -237,12 +237,12 @@ layers:
   - Ctl+Alt+RIGHT ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - F13
   - F6
   - F7
   - F8
   - F9
   - F10
+  - F11
   - {t: ▽, type: trans}
   - Ctl+Alt+U
   - Ctl+Alt+C
@@ -254,7 +254,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - F11
+  - F12
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -263,7 +263,7 @@ layers:
   - {t: ▽, type: trans}
   - Ctl+DOWN ARROW
   - Ctl+UP ARROW
-  - F12
+  - {t: ▽, type: trans}
   RESERVE:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
