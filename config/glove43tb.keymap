@@ -132,7 +132,7 @@
 &kp LG(C)         &kp LEFT_ALT    &kp LEFT_CONTROL    &lt 5 F24         &lt 2 SPACE         &lt 3 TAB                     &lt 6 F24         &lt 1 ENTER                                                           &kp LG(V)
             >;
 
-            sensor-bindings = <&mouse_wheel_scroll SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&sensor_rotate_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         ARROW_NUMBER {
@@ -146,10 +146,10 @@
 
         MOUSE_KIGO {
             bindings = <
-&trans  &trans    &mkp MCLK  &trans    &trans                             &kp PLUS       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOUBLE_QUOTES  &kp COLON
-&trans  &mkp MB4  &mkp MB2   &mkp MB1  &mkp MB5  &trans      &kp LS(F23)  &kp EQUAL      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SQT            &kp SEMICOLON
-&trans  &trans    &trans     &trans    &trans    &trans      &kp F23      &kp UNDER      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH      &kp PIPE
-&trans  &trans    &trans     &trans    &trans    &trans      &kp DELETE   &kp BACKSPACE                                                                  &trans
+&trans     &trans    &mkp MCLK  &trans    &trans                             &kp PLUS       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOUBLE_QUOTES  &kp COLON
+&kp LG(A)  &mkp MB4  &mkp MB2   &mkp MB1  &mkp MB5  &trans      &kp LS(F23)  &kp EQUAL      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SQT            &kp SEMICOLON
+&trans     &trans    &trans     &trans    &trans    &trans      &kp F23      &kp UNDER      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH      &kp PIPE
+&trans     &trans    &trans     &trans    &trans    &trans      &kp DELETE   &kp BACKSPACE                                                                  &trans
             >;
         };
 
@@ -179,9 +179,7 @@
 &trans     &trans                      &trans         &trans                       &trans  &trans      &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)                           &trans
             >;
 
-            sensor-bindings =
-                <&sensor_rotate_kp C_VOLUME_DOWN C_VOLUME_UP>,
-                <&inc_dec_kp 0 0>;
+            sensor-bindings = <&sensor_rotate_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         KIGO {
