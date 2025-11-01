@@ -142,6 +142,8 @@
 &trans  &kp NUMBER_1  &kp N2  &kp N3     &kp N0      &trans         &trans  &kp LG(DOWN_ARROW)  &trans              &trans          &trans               &trans
 &trans  &trans        &trans  &kp LG(X)  &kp ESCAPE  &kp LG(Z)      &trans  &trans                                                                       &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
         };
 
         MOUSE_KIGO {
@@ -155,10 +157,10 @@
 
         UTILITY {
             bindings = <
-&trans       &trans  &trans  &trans  &trans                               &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans       &trans  &trans  &trans  &trans    &trans        &trans       &trans        &trans        &trans        &trans        &trans
-&trans       &trans  &trans  &trans  &ind_con  &ind_bat      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&bootloader  &trans  &trans  &trans  &trans    &trans        &trans       &trans                                                  &bt BT_CLR_ALL
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4                        &kp LS(LG(LEFT_ARROW))  &kp LS(LA(LEFT_ARROW))  &kp LS(UP_ARROW)    &kp LS(LA(RIGHT_ARROW))  &kp LS(LG(RIGHT_ARROW))
+&trans        &trans        &trans          &trans        &trans        &trans        &trans  &kp LS(LG(UP_ARROW))    &kp LS(LEFT_ARROW)      &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)      &trans
+&trans        &trans        &trans          &trans        &ind_con      &ind_bat      &trans  &kp LS(LC(DOWN_ARROW))  &trans                  &trans              &trans                   &trans
+&bootloader   &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans        &trans  &trans                                                                                       &trans
             >;
         };
 
@@ -173,13 +175,11 @@
 
         SCROLL {
             bindings = <
-&kp LG(H)  &kp LC(LG(LA(LEFT_ARROW)))  &kp LC(LA(M))  &kp LA(LC(LG(RIGHT_ARROW)))  &trans                                  &kp F1            &kp F2  &kp F3  &kp F4   &kp F5
-&kp LG(W)  &kp LC(LA(LEFT_ARROW))      &kp LC(LA(R))  &kp LC(LA(RIGHT_ARROW))      &trans  &trans      &kp F6              &kp F7            &kp F8  &kp F9  &kp F10  &kp F11
+&kp LG(W)  &kp LC(LG(LA(LEFT_ARROW)))  &kp LC(LA(M))  &kp LA(LC(LG(RIGHT_ARROW)))  &trans                                  &kp F1            &kp F2  &kp F3  &kp F4   &kp F5
+&kp LG(H)  &kp LC(LA(LEFT_ARROW))      &kp LC(LA(R))  &kp LC(LA(RIGHT_ARROW))      &trans  &trans      &kp F6              &kp F7            &kp F8  &kp F9  &kp F10  &kp F11
 &trans     &kp LC(LA(U))               &kp LC(LA(C))  &kp LC(LA(I))                &trans  &trans      &trans              &trans            &trans  &trans  &trans   &kp F12
 &trans     &trans                      &trans         &trans                       &trans  &trans      &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)                           &trans
             >;
-
-            sensor-bindings = <&sensor_rotate_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         KIGO {
