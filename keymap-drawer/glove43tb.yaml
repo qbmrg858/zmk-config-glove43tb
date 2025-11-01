@@ -133,16 +133,16 @@ layers:
   - BACKSPACE
   - {t: ▽, type: trans}
   UTILITY:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
+  - Sft+Gui+LEFT ARROW
+  - Sft+Alt+LEFT ARROW
+  - Sft+UP ARROW
+  - Sft+Alt+RIGHT ARROW
+  - Sft+Gui+RIGHT ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -150,10 +150,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Sft+Gui+UP ARROW
+  - Sft+LEFT ARROW
+  - Sft+DOWN ARROW
+  - Sft+RIGHT ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -161,21 +161,21 @@ layers:
   - {t: ▽, type: trans}
   - '&ind_con'
   - '&ind_bat'
+  - {t: ▽, type: trans}
+  - Sft+Ctl+DOWN ARROW
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '&bootloader'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - BT CLR
-  - '&bootloader'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BT CLR ALL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - BT CLR ALL
+  - {t: ▽, type: trans}
   AUTO_MOUSE:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -221,7 +221,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   SCROLL:
-  - Gui+H
+  - Gui+W
   - Ctl+Gui+Alt+LEFT ARROW
   - Ctl+Alt+M
   - Alt+Ctl+Gui+RIGHT ARROW
@@ -231,7 +231,7 @@ layers:
   - F3
   - F4
   - {t: F5, type: held}
-  - Gui+W
+  - Gui+H
   - Ctl+Alt+LEFT ARROW
   - Ctl+Alt+R
   - Ctl+Alt+RIGHT ARROW
