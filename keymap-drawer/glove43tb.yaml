@@ -270,11 +270,11 @@ layers:
   - '*'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+Sft+LEFT ARROW
+  - Sft+Alt+LEFT ARROW
+  - Sft+UP ARROW
+  - Sft+Alt+RIGHT ARROW
+  - Sft+Ctl+RIGHT ARROW
   - {t: ▽, type: trans}
   - $
   - '%'
@@ -282,10 +282,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Sft+Ctl+UP ARROW
+  - Sft+LEFT ARROW
+  - Sft+DOWN ARROW
+  - Sft+RIGHT ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '!'
@@ -294,7 +294,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Sft+Ctl+DOWN ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -309,5 +309,5 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [27, 28]
+- p: [40, 41]
   k: '&alias'
