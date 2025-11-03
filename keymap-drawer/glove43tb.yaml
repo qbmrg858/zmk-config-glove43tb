@@ -309,5 +309,5 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [8, 9]
+- p: [27, 28]
   k: '&alias'
