@@ -3,25 +3,25 @@ layers:
   default:
   - Q
   - W
-  - {t: E, h: LEFT CONTROL}
+  - {t: E, h: LEFT ALT}
   - R
   - T
   - Y
   - U
-  - {t: I, h: RIGHT CONTROL}
+  - {t: I, h: RIGHT ALT}
   - O
   - {t: P, h: SCROLL}
   - {t: A, h: LEFT SHIFT}
-  - {t: S, h: LEFT ALT}
+  - {t: S, h: LEFT CONTROL}
   - {t: D, h: LEFT GUI}
   - {t: F, h: LEFT SHIFT}
-  - {t: G, h: LEFT CONTROL}
+  - {t: G, h: LEFT ALT}
   - {t: ▽, type: trans}
   - <
-  - {t: H, h: LCTRL}
+  - {t: H, h: RIGHT ALT}
   - {t: J, h: RIGHT SHIFT}
   - {t: K, h: RIGHT GUI}
-  - {t: L, h: RIGHT ALT}
+  - {t: L, h: RIGHT CONTROL}
   - {t: '-', h: RIGHT SHIFT}
   - Z
   - X
