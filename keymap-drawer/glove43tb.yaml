@@ -3,7 +3,7 @@ layers:
   default:
   - Q
   - W
-  - {t: E, h: LEFT ALT}
+  - {t: E, h: RIGHT ALT}
   - R
   - T
   - Y
