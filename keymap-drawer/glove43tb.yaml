@@ -2,7 +2,7 @@ layout: {zmk_keyboard: glove43tb}
 layers:
   default:
   - Q
-  - W
+  - {t: W, h: UTILITY}
   - {t: E, h: LEFT CONTROL}
   - R
   - T
@@ -11,7 +11,7 @@ layers:
   - {t: I, h: LEFT CONTROL}
   - {t: O, h: KIGO}
   - {t: P, h: SCROLL}
-  - {t: A, h: LEFT SHIFT}
+  - {t: A, h: LEFT CONTROL}
   - {t: S, h: LEFT ALT}
   - {t: D, h: LEFT GUI}
   - {t: F, h: LEFT SHIFT}
@@ -22,7 +22,7 @@ layers:
   - {t: J, h: RIGHT SHIFT}
   - {t: K, h: RIGHT GUI}
   - {t: L, h: LEFT ALT}
-  - {t: '-', h: RIGHT SHIFT}
+  - {t: '-', h: RIGHT CONTROL}
   - Z
   - X
   - C
@@ -35,15 +35,15 @@ layers:
   - ','
   - .
   - /
-  - Gui+C
+  - {t: Gui+C, h: LEFT SHIFT}
   - LEFT ALT
   - LEFT CONTROL
   - {t: F24, h: SCROLL}
   - {t: SPACE, h: MOUSE_KIGO}
-  - {t: TAB, h: UTILITY}
+  - {t: TAB, h: LEFT SHIFT}
   - {t: BACKSPACE, h: LEFT SHIFT}
   - {t: ENTER, h: ARROW_NUMBER}
-  - Gui+V
+  - {t: Gui+V, h: RIGHT SHIFT}
   ARROW_NUMBER:
   - {t: ▽, type: trans}
   - '7'
@@ -134,7 +134,7 @@ layers:
   - {t: ▽, type: trans}
   UTILITY:
   - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
+  - {t: BT, h: '1', type: held}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
@@ -172,7 +172,7 @@ layers:
   - BT CLR ALL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
