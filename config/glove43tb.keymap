@@ -48,6 +48,11 @@
             bindings = <&alias>;
             key-positions = <40 41>;
         };
+
+        voice_input {
+            bindings = <&kp LS(LA(LG(J)))>;
+            key-positions = <13 12 11>;
+        };
     };
 
     macros {
