@@ -9,7 +9,7 @@ layers:
   - Y
   - U
   - {t: I, h: LEFT CONTROL}
-  - O
+  - {t: O, h: KIGO}
   - {t: P, h: SCROLL}
   - {t: A, h: LEFT SHIFT}
   - {t: S, h: LEFT ALT}
@@ -41,7 +41,7 @@ layers:
   - {t: F24, h: SCROLL}
   - {t: SPACE, h: MOUSE_KIGO}
   - {t: TAB, h: UTILITY}
-  - {t: BACKSPACE, h: KIGO}
+  - {t: BACKSPACE, h: LEFT SHIFT}
   - {t: ENTER, h: ARROW_NUMBER}
   - Gui+V
   ARROW_NUMBER:
@@ -273,7 +273,7 @@ layers:
   - Ctl+Sft+LEFT ARROW
   - Sft+Alt+LEFT ARROW
   - Sft+UP ARROW
-  - Sft+Alt+RIGHT ARROW
+  - {t: Sft+Alt+RIGHT ARROW, type: held}
   - Sft+Ctl+RIGHT ARROW
   - {t: ▽, type: trans}
   - $
@@ -305,7 +305,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
