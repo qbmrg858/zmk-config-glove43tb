@@ -101,10 +101,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W           &mt LEFT_CONTROL E  &kp R             &kp T                                                                       &kp Y               &kp U              &mt LEFT_CONTROL I  &lt 6 O         &lt 5 P
-&mt LEFT_SHIFT A  &mt LEFT_ALT S  &mt LEFT_GUI D      &mt LEFT_SHIFT F  &mt LEFT_CONTROL G  &trans                        &kp LESS_THAN             &mt LEFT_CONTROL H  &mt RIGHT_SHIFT J  &mt RIGHT_GUI K     &mt LEFT_ALT L  &mt RIGHT_SHIFT MINUS
-&kp Z             &kp X           &kp C               &kp V             &kp B               &kp LC(LS(LG(NUMBER_4)))      &kp GREATER_THAN          &kp N               &kp M              &kp COMMA           &kp DOT         &kp SLASH
-&kp LG(C)         &kp LEFT_ALT    &kp LEFT_CONTROL    &lt 5 F24         &lt 2 SPACE         &lt 3 TAB                     &mt LEFT_SHIFT BACKSPACE  &lt 1 ENTER                                                                &kp LG(V)
+&kp Q                 &lt 3 W         &mt LEFT_CONTROL E  &kp R             &kp T                                                                       &kp Y               &kp U              &mt LEFT_CONTROL I  &lt 6 O         &lt 5 P
+&mt LEFT_CONTROL A    &mt LEFT_ALT S  &mt LEFT_GUI D      &mt LEFT_SHIFT F  &mt LEFT_CONTROL G  &trans                        &kp LESS_THAN             &mt LEFT_CONTROL H  &mt RIGHT_SHIFT J  &mt RIGHT_GUI K     &mt LEFT_ALT L  &mt RIGHT_CONTROL MINUS
+&kp Z                 &kp X           &kp C               &kp V             &kp B               &kp LC(LS(LG(NUMBER_4)))      &kp GREATER_THAN          &kp N               &kp M              &kp COMMA           &kp DOT         &kp SLASH
+&mt LEFT_SHIFT LG(C)  &kp LEFT_ALT    &kp LEFT_CONTROL    &lt 5 F24         &lt 2 SPACE         &mt LEFT_SHIFT TAB            &mt LEFT_SHIFT BACKSPACE  &lt 1 ENTER                                                                &mt RIGHT_SHIFT LG(V)
             >;
 
             sensor-bindings = <&sensor_rotate_kp C_VOLUME_UP C_VOLUME_DOWN>;
