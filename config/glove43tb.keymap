@@ -107,7 +107,7 @@
 &kp LG(C)         &kp LEFT_ALT    &kp LEFT_CONTROL    &lt 5 F24         &lt 2 SPACE         &lt 3 TAB                     &mt LEFT_SHIFT BACKSPACE  &lt 1 ENTER                                                                &kp LG(V)
             >;
 
-            sensor-bindings = <&sensor_rotate_kp C_VOLUME_DOWN C_VOLUME_UP>;
+            sensor-bindings = <&sensor_rotate_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         ARROW_NUMBER {
