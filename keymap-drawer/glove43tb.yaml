@@ -41,7 +41,7 @@ layers:
   - {t: F24, h: SCROLL}
   - {t: SPACE, h: MOUSE_KIGO}
   - {t: TAB, h: UTILITY}
-  - {t: F24, h: KIGO}
+  - {t: BACKSPACE, h: KIGO}
   - {t: ENTER, h: ARROW_NUMBER}
   - Gui+V
   ARROW_NUMBER:
