@@ -311,3 +311,5 @@ layers:
 combos:
 - p: [40, 41]
   k: '&alias'
+- p: [13, 12, 11]
+  k: Sft+Alt+Gui+J
