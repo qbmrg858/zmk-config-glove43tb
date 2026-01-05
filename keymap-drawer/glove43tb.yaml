@@ -45,7 +45,7 @@ layers:
   - {t: ENTER, h: ARROW_NUMBER}
   - {t: Gui+V, h: RIGHT SHIFT}
   ARROW_NUMBER:
-  - {t: ▽, type: trans}
+  - '*'
   - '7'
   - '8'
   - '9'
@@ -55,7 +55,7 @@ layers:
   - UP ARROW
   - Alt+RIGHT ARROW
   - Gui+RIGHT ARROW
-  - {t: ▽, type: trans}
+  - '0'
   - '4'
   - '5'
   - '6'
